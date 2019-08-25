@@ -29,14 +29,25 @@ export default new Router({
       component: () => import("./views/Home.vue")
     },
     {
+      path: "/groups",
+      name: "groups",
+      component: () => import("./views/Groups.vue")
+    },
+    {
+      path: "/groups/create",
+      name: "create group",
+      component: () => import("./views/NewGroup.vue")
+    },
+    {
       path: "/sanctuary",
       name: "sanctuary",
-      component: () => import("./views/Home.vue")
+      component: () => import("./views/Sanctuary.vue")
     },
     {
       path: "/others/selah",
       name: "selah",
-      component: () => import("./views/Home.vue")
+      component: () => import("./views/Selah.vue"),
+      props: { header: "view others' prayer requests" }
     },
     {
       path: "/others",
@@ -46,12 +57,18 @@ export default new Router({
     {
       path: "/request/selah",
       name: "selah",
-      component: () => import("./views/Home.vue")
+      component: () => import("./views/Selah.vue"),
+      props: { header: "send a prayer request" }
     },
     {
       path: "/request",
       name: "request",
       component: () => import("./views/Home.vue")
+    },
+    {
+      path: "/logout",
+      name: "logout",
+      component: () => import("./views/Logout.vue")
     }
   ]
 });

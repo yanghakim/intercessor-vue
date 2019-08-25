@@ -14,7 +14,7 @@ export default {
   },
   data() {
     return {
-      header: "LOGIN",
+      header: "login",
       subheader: "Login",
       body:
         "Jesus gave an example of intercessory prayer when he prayed for the people in the world. When a person says a favorable prayer for another person, they intervene for them. They act as a intermediary between the person and God for a precise reason."

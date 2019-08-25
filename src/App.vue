@@ -1,13 +1,5 @@
 <template>
   <div class="app">
-    <div class="app-loading">
-      <img
-        class="app-loading-img"
-        src="./assets/logo.png"
-        width="285"
-        height="75"
-      />
-    </div>
     <router-view />
     <img class="app-logo" src="./assets/logo.png" width="285" height="75" />
 
@@ -59,23 +51,6 @@ input
 
   overflow: hidden
 
-  &-loading
-    width: 100vw
-    height: 100vh
-
-    background-image: url("./assets/loading2.png")
-    background-size: cover
-
-    display: flex
-    justify-content: center
-    align-items: center
-
-    position: absolute
-
-    z-index: 2
-
-    animation: fadeOut 2s ease forwards 1s
-
   &-logo
     position: absolute
     left: 50px
@@ -114,5 +89,11 @@ input
 
   100%
     opacity: 0
-    display: none
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
 </style>

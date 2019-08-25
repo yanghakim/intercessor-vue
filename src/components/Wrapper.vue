@@ -7,14 +7,14 @@
           {{ subheader }}
         </p>
         <router-link
-          v-if="header === 'LOGIN'"
+          v-if="header === 'login'"
           v-bind:class="{ active: subheader === 'Login' }"
           class="wrapper__body__left-link"
           to="/"
           >Login</router-link
         >
         <router-link
-          v-if="header === 'LOGIN'"
+          v-if="header === 'login'"
           v-bind:class="{ active: subheader === 'Register' }"
           class="wrapper__body__left-link"
           to="/register"
@@ -26,13 +26,13 @@
       <div class="wrapper__body__right">
         <!-- LOGIN/REGISTER COMPONENT -->
         <input
-          v-if="header === 'LOGIN'"
+          v-if="header === 'login'"
           class="wrapper__body__right-item input"
           type="email"
           placeholder="..email"
         />
         <input
-          v-if="header === 'LOGIN'"
+          v-if="header === 'login'"
           class="wrapper__body__right-item input"
           type="password"
           placeholder="..password"
@@ -92,32 +92,31 @@
 
         <!-- NEWUSER COMPONENT -->
         <input
-          v-if="header === 'NEW USER'"
+          v-if="header === 'new user'"
           class="wrapper__body__right-item input"
           type="text"
           placeholder="..first name"
         />
         <input
-          v-if="header === 'NEW USER'"
+          v-if="header === 'new user'"
           class="wrapper__body__right-item input"
           type="text"
           placeholder="..last name"
         />
         <input
-          v-if="header === 'NEW USER'"
+          v-if="header === 'new user'"
           class="wrapper__body__right-item input"
           type="text"
           placeholder="..user acronym"
         />
         <input
-          v-if="header === 'NEW USER'"
+          v-if="header === 'new user'"
           class="wrapper__body__right-item input"
           type="text"
           placeholder="..gender"
         />
-
         <router-link
-          v-if="header === 'NEW USER'"
+          v-if="header === 'new user'"
           class="wrapper__body__right-item button"
           to="/home"
         >
@@ -126,21 +125,21 @@
 
         <!-- HOME COMPONENT -->
         <router-link
-          v-if="header === 'HOME'"
+          v-if="header === 'home'"
           class="wrapper__body__right-item button"
           to="/others/selah"
         >
           view others' prayer requests</router-link
         >
         <router-link
-          v-if="header === 'HOME'"
+          v-if="header === 'home'"
           class="wrapper__body__right-item button"
           to="/sanctuary"
         >
           enter a prayer environment</router-link
         >
         <router-link
-          v-if="header === 'HOME'"
+          v-if="header === 'home'"
           class="wrapper__body__right-item button"
           to="/request/selah"
         >
@@ -169,10 +168,10 @@ export default {
 
   box-shadow: 0 4px 5px grey
 
-  animation: bouncing 2s ease-in-out infinite alternate
+  animation: bouncing 2s ease-in-out infinite alternate, fadeIn 0.5s ease-in-out forwards
 
   &-header
-    font-size: 2.5em
+    font-size: 1.5em
 
   &__body
     display: flex
@@ -187,7 +186,7 @@ export default {
       max-width: 40%
 
       &-subheader
-        font-size: 1.5em
+        font-size: 2em
 
       &-link
         font-size: 1.5em
@@ -258,4 +257,11 @@ export default {
           margin-top: 20px
 
           font-size: 1.2em
+
+          padding: 5px 10px
+
+          border: 2px dashed white
+
+          &:hover
+            border: 2px dashed red
 </style>

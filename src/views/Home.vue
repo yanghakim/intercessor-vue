@@ -14,7 +14,7 @@ export default {
   },
   data() {
     return {
-      header: "HOME",
+      header: "home",
       subheader: "Choose Your Weapon",
       body:
         "Intercessor is very purposefully separated into three sections. When entering the menu screen, the user is required to be very intentional about how they want to use the app for that session. It was important that this app did not promote or facilitate mindless scrolling and that it stayed as far away from an addictive user experience as possible. Timers are implemented for this very reason."
